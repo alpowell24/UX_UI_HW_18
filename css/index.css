@@ -42,9 +42,7 @@ body {
 }
 
 .heroImage {
-  display: flex;
   grid-area: heroImage;
-  align-items: center;
   background-color: black;
 }
 
@@ -121,16 +119,7 @@ a:hover {
 
 .heroImage img {
   max-width: 100%;
-  margin-left: 10px;
   min-height: 100%;
-  padding-left: 10px;
-}
-
-.heroBio {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
 }
 
 .heroBio p {
