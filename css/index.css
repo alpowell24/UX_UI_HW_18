@@ -6,10 +6,11 @@
 body {
   display: grid;
   grid-template-columns: 50% auto;
-  grid-template-rows: 60px auto 60px;
+  grid-template-rows: 60px auto auto 60px;
   grid-template-areas:
     "navigation navigation"
     "heroImage heroBio"
+    "skillsSection skillsSection"
     "footer footer";
   padding: 10px;
 }
@@ -180,4 +181,35 @@ h2 {
   font-family: Interstate;
   font-weight: bold;
   font-variant: small-caps;
+}
+
+#skillsSection {
+  display: flex;
+  height: 585px;
+  border-color: red;
+  border-style: dashed;
+  grid-area: skillsSection;
+  justify-content: space-evenly;
+  padding: 15px;
+  align-items: center;
+  background-color: black;
+}
+
+.skillsComponent {
+  border-color: blue;
+  border-style: dashed;
+  width: 433px;
+  height: 360px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  background-image: url("../images/skillsBackground.png");
+  background-repeat: no-repeat;
+}
+
+.skillsComponent p {
+  padding: 0px 33px;
 }
