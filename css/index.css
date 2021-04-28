@@ -98,6 +98,7 @@ h1 {
   font-family: Interstate;
   font-weight: bold;
   font-variant: small-caps;
+  color: white;
 }
 
 nav a {
@@ -183,6 +184,16 @@ h2 {
   font-variant: small-caps;
 }
 
+#skillsComponents {
+  display: flex;
+  height: 585px;
+  grid-area: skillsSection;
+  justify-content: space-evenly;
+  padding: 0px 15px;
+  align-items: center;
+  background-color: black;
+}
+
 #skillsSection {
   display: flex;
   height: 585px;
@@ -190,14 +201,13 @@ h2 {
   border-style: dashed;
   grid-area: skillsSection;
   justify-content: space-evenly;
-  padding: 15px;
+  padding: 0px 15px;
   align-items: center;
   background-color: black;
+  flex-direction: column;
 }
 
 .skillsComponent {
-  border-color: blue;
-  border-style: dashed;
   width: 433px;
   height: 360px;
   display: flex;
@@ -208,8 +218,14 @@ h2 {
   color: white;
   background-image: url("../images/skillsBackground.png");
   background-repeat: no-repeat;
+  box-shadow: 4px 4px 16px rgba(249, 167, 86, 0.56);
+  margin: 20px;
 }
 
 .skillsComponent p {
   padding: 0px 33px;
+  font-size: 18px;
+  font-family: Interstate;
+  font-weight: 300;
+  font-style: normal;
 }
