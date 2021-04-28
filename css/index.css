@@ -222,10 +222,23 @@ h2 {
   margin: 20px;
 }
 
+.skillsComponent img {
+  position: relative;
+  top: 20px;
+}
+
 .skillsComponent p {
   padding: 0px 33px;
-  font-size: 18px;
+  font-size: 24px;
   font-family: Interstate;
   font-weight: 300;
   font-style: normal;
+  margin-bottom: 20px;
+  position: relative;
+  bottom: 20px;
+}
+
+.skillsComponent h1 {
+  position: relative;
+  top: 10px;
 }
