@@ -272,3 +272,11 @@ h2 {
   box-shadow: 4px 4px 16px rgba(249, 167, 86, 0.56);
   margin: 20px;
 }
+
+p {
+  padding: 0px 33px;
+  font-size: 24px;
+  font-family: Interstate;
+  font-weight: 300;
+  font-style: normal;
+}
