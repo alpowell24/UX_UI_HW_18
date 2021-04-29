@@ -6,11 +6,12 @@
 body {
   display: grid;
   grid-template-columns: 50% auto;
-  grid-template-rows: 60px auto auto 60px;
+  grid-template-rows: 60px auto auto auto 60px;
   grid-template-areas:
     "navigation navigation"
     "heroImage heroBio"
     "skillsSection skillsSection"
+    "caseStudySection caseStudySection"
     "footer footer";
   padding: 10px;
 }
@@ -176,7 +177,6 @@ h2 {
 #skillsComponents {
   display: flex;
   height: 585px;
-  grid-area: skillsSection;
   justify-content: space-evenly;
   padding: 0px 15px;
   align-items: center;
@@ -194,6 +194,18 @@ h2 {
   align-items: center;
   background-color: black;
   flex-direction: column;
+}
+
+#caseStudySection {
+  grid-area: caseStudySection;
+  border-color: blue;
+  border-style: dashed;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
 }
 
 .skillsComponent {
@@ -230,4 +242,33 @@ h2 {
 .skillsComponent h1 {
   position: relative;
   top: 10px;
+}
+
+.caseStudy {
+  display: flex;
+}
+
+#caseStudyImage1 > img {
+  width: 624px;
+  height: 544px;
+}
+
+#caseStudyImage2 > img {
+  width: 651px;
+  height: 469px;
+}
+
+.caseStudyOverview {
+  width: 639px;
+  height: 544px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  background-image: url("../images/caseStudyBackground.png");
+  background-repeat: no-repeat;
+  box-shadow: 4px 4px 16px rgba(249, 167, 86, 0.56);
+  margin: 20px;
 }
