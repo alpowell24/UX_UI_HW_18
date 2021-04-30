@@ -247,12 +247,15 @@ h2 {
 }
 
 #caseStudy2 {
-  margin-bottom: 30px;
+  margin: 50px 0px;
 }
 
 #caseStudyImage1 > img {
-  width: 650px;
-  height: 600px;
+  width: 500px;
+  height: 500px;
+  position: relative;
+  right: 50;
+  top: 50;
 }
 
 #caseStudyImage1 {
