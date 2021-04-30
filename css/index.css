@@ -198,8 +198,6 @@ h2 {
 
 #caseStudySection {
   grid-area: caseStudySection;
-  border-color: blue;
-  border-style: dashed;
   background-color: black;
   display: flex;
   flex-direction: column;
@@ -248,9 +246,23 @@ h2 {
   display: flex;
 }
 
+#caseStudy2 {
+  margin-bottom: 30px;
+}
+
 #caseStudyImage1 > img {
-  width: 624px;
-  height: 544px;
+  width: 650px;
+  height: 600px;
+}
+
+#caseStudyImage1 {
+  position: relative;
+  bottom: 30;
+}
+
+#caseStudyImage2 {
+  position: relative;
+  top: 50;
 }
 
 #caseStudyImage2 > img {
