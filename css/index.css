@@ -9,7 +9,7 @@ body {
   grid-template-rows: 60px auto auto auto 60px;
   grid-template-areas:
     "navigation navigation"
-    "heroImage heroBio"
+    "heroSection heroSection"
     "skillsSection skillsSection"
     "caseStudySection caseStudySection"
     "footer footer";
@@ -21,6 +21,12 @@ body {
   align-items: center;
   display: flex;
   width: 100px;
+}
+
+.heroSection {
+  grid-area: heroSection;
+  display: flex;
+  background-color: black;
 }
 
 .navigation {
@@ -37,14 +43,7 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  grid-area: heroBio;
-  background-color: black;
   color: white;
-}
-
-.heroImage {
-  grid-area: heroImage;
-  background-color: black;
 }
 
 .footer {
@@ -116,11 +115,6 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.heroImage img {
-  max-width: 100%;
-  min-height: 100%;
 }
 
 .heroBio p {
@@ -244,28 +238,38 @@ h2 {
 
 .caseStudy {
   display: flex;
+  height: 526px;
+  width: 1297px;
+}
+
+#caseStudy1 {
+  background-image: url("../images/caseStudyOneBackground.png");
+  box-shadow: 4px 4px 16px rgba(249, 167, 86, 0.56);
+  background-repeat: no-repeat;
 }
 
 #caseStudy2 {
   margin: 50px 0px;
-}
-
-#caseStudyImage1 > img {
-  width: 500px;
-  height: 500px;
-  position: relative;
-  right: 50;
-  top: 50;
+  background-image: url("../images/caseStudyTwoBackground.png");
+  box-shadow: 4px 4px 16px rgba(249, 167, 86, 0.56);
+  background-repeat: no-repeat;
 }
 
 #caseStudyImage1 {
   position: relative;
-  bottom: 30;
+  top: 30;
+  left: 30;
+}
+
+#caseStudyImage1 > img {
+  width: 510px;
+  height: 475px;
+  position: relative;
 }
 
 #caseStudyImage2 {
   position: relative;
-  top: 50;
+  top: 30;
 }
 
 #caseStudyImage2 > img {
@@ -273,23 +277,27 @@ h2 {
   height: 469px;
 }
 
-.caseStudyOverview {
-  width: 639px;
-  height: 544px;
+#caseStudyOverview1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  text-align: center;
+  align-items: flex-start;
+  text-align: left;
   color: white;
-  background-image: url("../images/caseStudyBackground.png");
-  background-repeat: no-repeat;
-  box-shadow: 4px 4px 16px rgba(249, 167, 86, 0.56);
-  margin: 20px;
+  margin: 0px 110px;
+}
+
+#caseStudyOverview2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: right;
+  color: white;
+  margin: 0px 49px;
 }
 
 p {
-  padding: 0px 33px;
   font-size: 24px;
   font-family: Interstate;
   font-weight: 300;
