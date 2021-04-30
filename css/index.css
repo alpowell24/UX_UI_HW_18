@@ -139,7 +139,6 @@ button {
   font-family: Interstate;
   font-weight: 700;
   margin-top: 10px;
-  margin-bottom: 37px;
   transition: background-color 0.5s ease;
   border: 0;
 }
@@ -179,12 +178,11 @@ h2 {
 
 #skillsSection {
   display: flex;
-  height: 585px;
+  height: 479px;
   border-color: red;
   border-style: dashed;
   grid-area: skillsSection;
   justify-content: space-evenly;
-  padding: 0px 15px;
   align-items: center;
   background-color: black;
   flex-direction: column;
