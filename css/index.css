@@ -26,7 +26,9 @@ body {
 .heroSection {
   grid-area: heroSection;
   display: flex;
+  justify-content: space-evenly;
   background-color: black;
+  padding-top: 20px;
 }
 
 .navigation {
@@ -42,8 +44,14 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   text-align: center;
   color: white;
+  background-image: url("../images/heroBioBackground.png");
+  background-repeat: no-repeat;
+  height: 587px;
+  width: 660px;
+  box-shadow: 4px 4px 16px rgba(249, 167, 86, 0.56);
 }
 
 .footer {
@@ -125,8 +133,6 @@ a:hover {
   line-height: 28.8px;
   padding-left: 20px;
   padding-right: 20px;
-  width: 85%;
-  max-width: 85%;
 }
 
 button {
@@ -179,8 +185,6 @@ h2 {
 #skillsSection {
   display: flex;
   height: 479px;
-  border-color: red;
-  border-style: dashed;
   grid-area: skillsSection;
   justify-content: space-evenly;
   align-items: center;
