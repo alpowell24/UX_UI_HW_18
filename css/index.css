@@ -13,6 +13,7 @@ body {
     "skillsSection skillsSection"
     "caseStudySection caseStudySection"
     "footer footer";
+  padding: 10px;
 }
 
 .logo {
@@ -28,6 +29,7 @@ body {
   justify-content: space-evenly;
   background-color: black;
   padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .navigation {
@@ -51,6 +53,11 @@ body {
   height: 587px;
   width: 660px;
   box-shadow: 4px 4px 16px rgba(249, 167, 86, 0.56);
+  border-radius: 5px;
+}
+
+.heroBio > button {
+  margin-bottom: 40px;
 }
 
 .footer {
