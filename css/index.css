@@ -311,3 +311,45 @@ p {
   font-weight: 300;
   font-style: normal;
 }
+
+@media only screen and (max-width: 600px) {
+  .heroSection {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-style: dashed;
+    border-color: blue;
+  }
+
+  #skillsSection {
+    display: flex;
+    height: 1600px;
+    grid-area: skillsSection;
+    justify-content: start;
+    align-items: center;
+    background-color: black;
+    flex-direction: column;
+    border-style: dashed;
+    border-color: red;
+  }
+
+  #skillsComponents {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: black;
+    flex-direction: column;
+    border-style: dashed;
+    border-color: red;
+  }
+
+  .heroBio {
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .heroImage {
+    width: 100%;
+  }
+}
