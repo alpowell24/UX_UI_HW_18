@@ -285,8 +285,8 @@ h2 {
 }
 
 #caseStudyImage2Mobile > img {
-  width: 651px;
-  height: 469px;
+  width: 600px;
+  height: 440px;
 }
 
 #caseStudyImage2Mobile {
@@ -412,13 +412,11 @@ p {
   #caseStudyOverview1 {
     align-items: center;
     text-align: center;
-    margin: 0px 110px;
   }
 
   #caseStudyOverview2 {
     align-items: center;
     text-align: center;
-    margin: 0px 49px;
   }
 
   #caseStudyImage2Desktop {
