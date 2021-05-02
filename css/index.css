@@ -5,16 +5,38 @@
 
 body {
   display: grid;
-  grid-template-columns: 50% auto;
+  grid-template-columns: 1fr;
   grid-template-rows: 60px auto auto auto 60px;
   grid-template-areas:
-    "navigation navigation"
-    "heroSection heroSection"
-    "skillsSection skillsSection"
-    "caseStudySection caseStudySection"
-    "footer footer";
+    "navigation"
+    "heroSection"
+    "skillsSection"
+    "caseStudySection"
+    "footer";
   padding: 10px;
   background-color: black;
+  color: white;
+}
+
+h1 {
+  font-size: 36px;
+  font-family: Interstate;
+  font-weight: bold;
+  font-variant: small-caps;
+}
+
+h2 {
+  font-size: 24px;
+  font-family: Interstate;
+  font-weight: bold;
+  font-variant: small-caps;
+}
+
+p {
+  font-size: 24px;
+  font-family: Interstate;
+  font-weight: 300;
+  font-style: normal;
 }
 
 .heroImage > img {
@@ -40,13 +62,12 @@ body {
 .navigationLeft {
   display: flex;
   justify-content: flex-start;
+  margin-left: 40px;
 }
 
 .navigation {
-  height: 59px;
   display: flex;
   justify-content: space-between;
-  color: white;
   grid-area: navigation;
 }
 
@@ -56,7 +77,6 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: white;
   background-image: url("../images/heroBioBackground.png");
   background-repeat: no-repeat;
   height: 587px;
@@ -65,31 +85,26 @@ body {
   border-radius: 5px;
 }
 
-.heroBio > button {
-  margin-bottom: 40px;
-}
-
 .footer {
-  height: 59px;
   display: flex;
   justify-content: space-between;
-  color: white;
   grid-area: footer;
 }
 
 .navigationRight {
   display: flex;
   justify-content: flex-end;
+  margin-right: 20px;
 }
 
 nav {
   float: right;
-  margin-right: 50px;
   text-align: center;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
+
 .social {
   float: right;
   justify-content: center;
@@ -105,14 +120,6 @@ nav {
 
 .social img:hover {
   transform: translate(0px, -1.2px);
-}
-
-h1 {
-  font-size: 36px;
-  font-family: Interstate;
-  font-weight: bold;
-  font-variant: small-caps;
-  color: white;
 }
 
 nav a {
@@ -165,19 +172,14 @@ button:hover {
   height: 59px;
   display: flex;
   justify-content: flex-start;
+  margin-left: 50px;
 }
 
 .footerRight {
   height: 59px;
   display: flex;
   justify-content: flex-end;
-}
-
-h2 {
-  font-size: 24px;
-  font-family: Interstate;
-  font-weight: bold;
-  font-variant: small-caps;
+  margin-right: 60px;
 }
 
 #skillsComponents {
@@ -185,7 +187,6 @@ h2 {
   justify-content: center;
   padding: 0px 15px;
   align-items: center;
-  background-color: black;
 }
 
 #skillsSection {
@@ -193,33 +194,22 @@ h2 {
   grid-area: skillsSection;
   justify-content: space-evenly;
   align-items: center;
-  background-color: black;
   flex-direction: column;
+  margin: 0px 10px;
 }
 
 .skillsComponent {
   width: 433px;
-  height: 360px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: white;
   background-image: url("../images/skillsBackground.png");
   background-repeat: no-repeat;
   box-shadow: 4px 4px 16px rgba(249, 167, 86, 0.56);
   margin: 20px;
   border-radius: 5px;
-}
-
-#caseStudySection {
-  grid-area: caseStudySection;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: white;
 }
 
 .skillsComponent img {
@@ -243,9 +233,17 @@ h2 {
   top: 10px;
 }
 
+#caseStudySection {
+  grid-area: caseStudySection;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .caseStudy {
   display: flex;
-  width: 1290px;
+  width: 1344px;
   padding-bottom: 50px;
   box-shadow: 4px 4px 16px rgba(249, 167, 86, 0.56);
   background-repeat: no-repeat;
@@ -254,6 +252,7 @@ h2 {
 
 #caseStudy1 {
   background-image: url("../images/caseStudyOneBackground.png");
+  margin: 30px 0px;
 }
 
 #caseStudy2 {
@@ -292,12 +291,10 @@ h2 {
   display: none;
 }
 
-caseStudyOverview {
+.caseStudyOverview {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  color: white;
 }
 
 #caseStudyOverview1 {
@@ -308,25 +305,25 @@ caseStudyOverview {
 #caseStudyOverview2 {
   text-align: right;
   margin: 0px 49px;
-}
-
-p {
-  font-size: 24px;
-  font-family: Interstate;
-  font-weight: 300;
-  font-style: normal;
+  align-items: flex-end;
 }
 
 @media only screen and (max-width: 600px) {
   body {
-    grid-template-columns: 1fr;
-    grid-template-rows: 60px auto auto auto 100px;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto;
     grid-template-areas:
       "navigation"
       "heroSection"
       "skillsSection"
       "caseStudySection"
       "footer";
+    border-color: blue;
+    border-style: dashed;
+  }
+
+  .navigationLeft {
+    margin-left: 0px;
   }
 
   nav {
@@ -335,19 +332,21 @@ p {
 
   .heroSection {
     flex-direction: column;
+    align-items: center;
+    border-color: red;
+    border-style: dashed;
+    width: 100%;
   }
 
   #skillsSection {
     grid-area: skillsSection;
     align-items: center;
-    background-color: black;
     flex-direction: column;
   }
 
   #skillsComponents {
     display: flex;
     align-items: center;
-    background-color: black;
     flex-direction: column;
   }
 
@@ -363,7 +362,7 @@ p {
   }
 
   .heroImage {
-    margin: 10px 10px;
+    margin: 10px;
   }
 
   .caseStudy {
